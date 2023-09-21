@@ -1,0 +1,1206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2e577da77.js" crossorigin="anonymous"></script>
+
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/functions.js"></script>
+
+    <title>Colegio Nuestra Señora del Sagrado Corazón</title>
+
+
+</head>
+<body>
+<div>
+    <header>
+        <div class="row d-flex justify-content-center align-items-center" id="bannerHeader">
+            <img src="images/bannerHeaderDesktop.png" style="width: 100%" id="headerDesktop">
+            <img src="images/bannerHeaderMobile.png" style="width: 100%" id="headerMobile">
+        </div>
+
+        <nav class="navbar navbar-expand-lg cn-stick-nav" id="navbar2">
+            <div class="container-fluid">
+
+                <div class="navbar-nav" id="navbarNav" >
+
+                    <button class="navbar-toggler position-absolute top-50 start-50 translate-middle " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #F3F3F3">
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarSupportedContent" >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html" id="btnInicioNavbar" >INICIO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NOSOTROS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="historia.html" id="btnHistoriaNavbar">Nuestra historia</a></li>
+                                    <li><a class="dropdown-item" href="nuestroLugar.html" id="btnLugarNavbar">Nuestro lugar</a></li>
+                                    <li><a class="dropdown-item" href="equipoDirectivo.html" id="btnEquipoNavbar">Equipo directivo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkNiveles" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NIVELES</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="inicial.html" id="btnInicialNavbar">Inicial</a></li>
+                                    <li><a class="dropdown-item" href="primario.html" id="btnPrimarioNavbar">Primario</a></li>
+                                    <li><a class="dropdown-item" href="secundario.html" id="btnSecundarioNavbar">Secundario</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="pastoral.html" id="btnPastoralNavbar" >PASTORAL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="somosVedruna.html" id="btnVedrunaNavbar" >SOMOS VEDRUNA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="contacto.html" id="btnContactoNavbar" >CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-right align-items-center"><button type="button" class="nav-link" id="btnInscripciones" onclick="openNav()">INSCRIPCIONES</button>
+                    <a href="https://www.instagram.com/colegio.nssc/" target="_blank"><i class="fa-brands fa-instagram" id="logoIg"></i></a>
+                    <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" target="_blank"> <i class="fa-brands fa-facebook" id="logoFb"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="row" id="lateralMenu">
+            <div class="col-4 col-sm-4 col-md-4">
+                <button class="openbtn" onclick="openNav2()" id="btnSidePanel2">&#9776;</button>
+            </div>
+            <div class="col-4 offset-4 col-sm-4 offset-sm-4 col-md-4 offset-md-4 d-flex justify-content-right align-items-center">
+                <button type="button" class="nav-link " id="btnInscripcionesSidebar" onclick="openNav()">INSCRIPCIONES</button>
+            </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav d-flex justify-content-center">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIMJj0ViOuOVf0eYI6IufLeOOtFMwoLCzxqxZ3oCd9zgBJlw/viewform?embedded=true" width="1000px" height="100%" frameborder="0" marginheight="0" marginwidth="0" >Loading…</iframe>
+
+        </div>
+        <div id="mySidepanel2" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html" id="btnInicioSidebar" >INICIO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarDropdownMenuLinkNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NOSOTROS</a>
+                    <ul class="dropdown-menu" aria-labelledby="sidebarDropdownMenuLink">
+                        <li ><a class="dropdown-item" href="historia.html" id="btnHistoriaSidebar">Nuestra historia</a></li>
+                        <li><a class="dropdown-item" href="nuestroLugar.html" id="btnLugarSidebar">Nuestro lugar</a></li>
+                        <li><a class="dropdown-item" href="equipoDirectivo.html" id="btnEquipoSidebar">Equipo directivo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarDropdownMenuLinkNiveles" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NIVELES</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="inicial.html" id="btnInicialSidebar">Inicial</a></li>
+                        <li><a class="dropdown-item" href="primario.html" id="btnPrimarioSidebar">Primario</a></li>
+                        <li><a class="dropdown-item" href="secundario.html" id="btnSecundarioSidebar">Secundario</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="pastoral.html" id="btnPastoralSidebar" >PASTORAL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="somosVedruna.html" id="btnVedrunaSidebar" >SOMOS VEDRUNA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contacto.html" id="btnContactoSidebar" >CONTACTO</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/colegio.nssc/" target="_blank"><i class="fa-brands fa-instagram " id="logoIgSideBar"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" target="_blank"> <i class="fa-brands fa-facebook" id="logoFbSidebar"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row" id="linearColors">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="border-top: var(--naranja) solid 5px"></div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="border-top: var(--verde) solid 5px"></div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="border-top: var(--violeta) solid 5px"></div>
+
+        </div>
+    </header>
+
+    <section id="seccionSecundario" class="d-flex justify-content-center">
+        <h3 class="focus-in-expand">Nivel Secundario</h3>
+    </section>
+    <section id="infoSecundario" class="d-flex justify-content-start">
+        <div class="row" id="borderSecundario">
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-7 offset-md-1 col-lg-7 offset-lg-1 col-xl-7 offset-xl-1 " >
+<!--            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-8 offset-md-1 col-lg-8 offset-lg-1 col-xl-8 offset-xl-1 order-sm-2 order-2 order-md-1 order-lg-1 order-xl-1" >-->
+                <h4 id="subtituloSeccion">INFORMACIÓN</h4>
+                <p style="text-align: justify">
+                    <span>Aspiramos a que nuestros jóvenes se identifiquen con el proyecto educativo Vedruna adquiriendo un rol protagónico en nuestra misión de contribuir a la construcción de una sociedad más fraterna, justa  y solidaria.</span><br>
+                    <span>Forjamos nuestros proyectos  con el fin de  darles herramientas para el desarrollo del pensamiento crítico en un espacio en donde se favorezca tanto el aprendizaje académico como el trabajo de habilidades y aptitudes socioafectivas para la inserción  en el mundo universitario y laboral siendo respetuosos de las diferencias personales, sociales, culturales y religiosas y  capaces de trabajar en equipo.</span><br>
+                    <span style="font-style: italic">“Se trata de hacer vida un proyecto cuya fuerza está orientada a formar personas nuevas para un mundo recreado.” </span><br>
+                    <span style="font-style: italic" class="d-flex justify-content-end">Propuesta Educativa Vedruna</span><br>
+                </p>
+                <div>
+                <h5 class="tituloNewParrafo azulLogo">
+                   Horario
+                </h5>
+
+                <p>
+                    Inicio: 7:30 hs
+                </p><br>
+                    <p>Salida: nuestro horario se denomina “horario extendido” lo que significa que hay días
+                        que salen más temprano y otros más tarde esto dependerá del año que curse</p>
+                </div>
+                <h5 class="tituloNewParrafo azulLogo">
+                   Planes de Estudio / Modalidad - Nueva Escuela Secundaria Orientada
+                </h5>
+                <h6 class="tituloNewParrafo">Bachillerato orientado en: ECONOMÍA Y ADMINISTRACIÓN</h6>
+                <p>
+                    <span>Objetivos</span><br>
+                    <span>Formar personas para desempeñarse en cualquier área de la empresa, utilizando herramientas informáticas, desarrollando su habilidad profesional y su ética para moverse en el ámbito empresarial.</span>
+                </p>
+                <h6 class="tituloNewParrafo">Bachillerato orientado en: COMUNICACIÓN</h6>
+                <p>
+                    <span>Objetivos</span><br>
+                    <span>Formar personas con conciencia crítica ante los medios de comunicación, apropiándose de las herramientas para poder manejarse y desempeñarse profesionalmente.</span>
+                </p><br>
+              <div style="background-color: #f3f3f3">
+                <p>Ambas orientaciones constan de:</p>
+                <div class="row">
+                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-5 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 ">
+                        <p style="font-weight: bold; text-decoration: solid">CICLO BÁSICO</p>
+                        <p>Común a ambas orientaciones</p>
+                        <p>Duración: 2 años - <b>1ro y 2do año</b></p>
+                    </div>
+                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-5 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1">
+                        <p style="font-weight: bold; text-decoration: solid">CICLO SUPERIOR ORIENTADO</p>
+                        <p>Propio de cada orientación</p>
+                        <p>Duración: 3 años - <b>3ro, 4to y 5to año</b></p>
+                    </div>
+                </div>
+                </div>
+                <div style="margin-top: 5%"></div>
+
+                <h5>Materias para el ciclo básico</h5>
+                <h6>Diseño curricular adaptado a nuestro colegio</h6>
+
+                <div style="margin-top: 5%"></div>
+<!--                inicio accordion-->
+
+                <div id="accordion">
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+                                <span class="blanco"><b>Primer año</b> - 43 horas cátedra <i class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                <tbody>
+                                <tr>
+                                    <td class="violeta">Materia</td>
+                                    <td class="violeta">Horas cátedra</td>
+                                </tr>
+                                <tr>
+                                    <td>Matemática</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr>
+                                    <td>Lengua y literatura</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Lenguas adicionales</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Educación física</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Biología</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Historia</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Geografía</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>Formación Ética y Ciudadana</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Educación Tecnológica</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Artes</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <td>Espacio de Definición Institucional</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Tutoría</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>Metodología del Estudio</td>
+                                    <td>2</td>
+                                </tr>
+                                </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+                                <span class="blanco"> <b>Segundo año</b> - 43 horas cátedra <i class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <table class="table table-bordered">
+
+                                    <tbody>
+                                    <tr>
+                                        <td class="violeta">Materia</td>
+                                        <td class="violeta">Horas cátedra</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matemática</td>
+                                        <td>6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lengua y literatura</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lenguas adicionales</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Educación física</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biología</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Geografía</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Formación Ética y Ciudadana</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Educación Tecnológica</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artes</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espacio de Definición Institucional</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tutoría</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sociología</td>
+                                        <td>3</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+                                <span class="blanco"> <b>Tercer año</b> - 43 hs cátedra: Formación Gral. 39hs + Formación específica 4hs <i class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <td class="violeta">Materia</td>
+                                        <td class="violeta">Horas cátedra</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matemática</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lengua y literatura</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lenguas adicionales</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Educación física</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Biología</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Geografía</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Formación Ética y Ciudadana</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tecnologías de la Información</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Economía</td>
+                                        <td>3</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Físico-Química</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espacio de Definición Institucional</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr style="background-color: #742687; color: #f3f3f3">
+                                        <td>Formación específica del área</td>
+                                        <td>4</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <td style="background-color: #F8971E; color: #f3f3f3">Bachiller en Comunicación</td><td style="background-color: #F8971E;color: #f3f3f3">Hs.</td>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Introducción a la Comunicación
+                                        </td>
+                                        <td>4</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <td style="background-color: #7CBB45; color: #f3f3f3">Bachiller en Economía y Administración</td><td style="background-color: #7CBB45;color: #f3f3f3">Hs.</td>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Organizaciones
+                                        </td>
+                                        <td>4</td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+                                <span class="blanco">  <b>Cuarto año</b> - 43 hs cátedra: Formación Gral.: 34hs + Formación Específica: 9hs <i class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+
+                                <table class="table table-bordered">
+                                    <tbody>
+                                    <tr>
+                                        <td class="violeta">Materia</td>
+                                        <td class="violeta">Horas cátedra</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matemática</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lengua y literatura</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lenguas adicionales</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Educación física</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Artes</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Historia</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Geografía</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Formación Ética y Ciudadana</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tecnologías de la Información</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Físico-Química</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Psicología general</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espacio de Definición Institucional</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #742687; color: #f3f3f3">Formación específica del área</td>
+                                        <td>9</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <td style="background-color: #7CBB45; color: #f3f3f3">Bachiller en Comunicación</td><td style="background-color: #7CBB45;color: #f3f3f3">Hs.</td>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Teorías de la comunicación
+                                        </td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Comunicación, Discursos Sociales y Medios
+                                        </td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Taller cuatrimestral de Producción en Lenguajes Multimediales
+                                        </td>
+                                        <td>3</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <td style="background-color: #F8971E; color: #f3f3f3">Bachiller en Economía y Administración</td><td style="background-color: #F8971E;color: #f3f3f3">Hs.</td>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Economía
+                                        </td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Sistemas Administrativos
+                                        </td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Sistemas de Información Contables
+                                        </td>
+                                        <td>3</td>
+                                    </tr>
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFive">
+                                <span class="blanco"><b>Quinto año</b> - 42 hs cátedra: Formación Gral. 26hs + Formación específica 16hs <i class="fa-solid fa-angle-down"></i></span>
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                            <div class="card-body">
+                                <table class="table table-bordered">
+                                    <thead>
+
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="violeta">Materia</td>
+                                        <td class="violeta">Horas cátedra</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matemática</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lengua y literatura</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Lenguas adicionales</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Educación física</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Filosofía</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Química</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Sociedad y Estado</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Espacio de Definición Institucional</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color: #742687; color: #f3f3f3">Formación específica del área</td>
+                                        <td>16</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <td style="background-color: #7CBB45; color: #f3f3f3">Bachiller en Comunicación</td><td style="background-color: #7CBB45;color: #f3f3f3">Hs.</td>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Seminario de Comunicación, Tecnología y Sociedad
+                                        </td>
+                                        <td>
+                                            3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Taller Cuatrimestral de Producción en Lenguajes Multimediales
+                                        </td>
+                                        <td>
+                                            5
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Proyecto de Comunicación
+                                        </td>
+                                        <td>
+                                            4
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Historia Orientada
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tecnologías de la Información (Orientada)
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <td style="background-color: #F8971E; color: #f3f3f3">Bachiller en Economía y Administración</td><td style="background-color: #F8971E;color: #f3f3f3">Hs.</td>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            Administración
+                                        </td>
+                                        <td>
+                                            3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Derecho
+                                        </td>
+                                        <td>
+                                            3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Contabilidad Patrimonial y de Gestión
+                                        </td>
+                                        <td>
+                                            3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Proyecto Organizacional
+                                        </td>
+                                        <td>
+                                            3
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Historia Orientada
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Tecnologías de la Información (Orientada)
+                                        </td>
+                                        <td>
+                                            2
+                                        </td>
+
+                                    </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div >
+<!--                fin accordion-->
+
+
+
+
+
+                <div id="proyectos">
+                    <h5 class="tituloNewParrafo azulLogo">
+                        Proyectos
+                    </h5>
+                    <ul style="text-align: justify">
+                        <li><b>Artes:</b> Lenguajes artísticos: Música y Artes Visuales</li>
+                        <li><b>Convenio con universidades privadas:</b> Di Tella – UADE – UB - UCA -UCES</li>
+                        <li><b>Digital Junior - UTN:</b> Exámenes de certificación de conocimientos informáticos</li>
+                        <li><b>Encuentros deportivos intercolegiales</b></li>
+                        <li><b>ESI - Programa de Educación Sexual Integral:</b> comunicación, equidad, afectividad, diversidad,
+                            derechos, respeto, reflexión, responsabilidad.</li>
+                        <li><b>Hospital Garrahan + NSSC: </b> evento de donación de sangre realizado en nuestro propio
+                            colegio coordinado y organizado por los alumnos y docentes</li>
+                        <li><b>Inglés:</b> trabajo por niveles</li>
+                        <li><b>Junior Achievement:</b> aprendizaje activo en educación financiera, futuro laboral y
+                            emprendimiento. Este proyecto de Aprender a Emprender propone a los estudiantes crear,
+                            organizar y operar un emprendimiento real adquiriendo herramientas sobre gestión de
+                            proyectos y desarrollando sus habilidades socioemocionales.</li>
+                        <li><b>Mejores Ciudadanos para una Ciudad Mejor:</b> evento que tiene por objetivo contribuir al conocimiento de la Constitución Nacional y de los valores cívicos</li>
+                        <li><b>MJV - Misión Juvenil Vedruna:</b> tiene como objetivo compartir momentos de reflexión, trabajo
+                            en grupo y ayuda social. Está compuesto por: Grupos juveniles – grupo misionero- centro
+                            comunitario – actividades y eventos solidarios – Pascua juvenil y otras tantas cosas</li>
+                        <li><b>Olimpiadas deportivas:</b> 25 años realizando en nuestro campo de deportes este evento que es
+                            uno de los más esperados por chicos y grandes.</li>
+                        <li><b>ONU (Organización de la Naciones Unidas) programa modelo:</b> con el auspicio de la Vicaría de
+                            educación del Arzobispado de Buenos Aires. Proyecto que fomenta la Investigación, la
+                            argumentación oral y escrita, y fundamentalmente la mirada sobre el mundo que nos rodea.</li>
+                        <li><b>Olimpíadas Contables UCA:</b> Facultad de Ciencias Económicas. Este evento busca que los
+                            alumnos desarrollen competencias relacionadas con saberes teóricos y el ejercicio de
+                            prácticas sociales y económicas aplicadas a la disciplina contable.</li>
+                        <li><b>PUL -Puente Universitario-Laboral-:</b> proyecto de actividades, visitas a universidades,
+                            conferencias, paneles de profesionales y talleres que favorecen a la transición hacia el futuro</li>
+                        <li><b>Sagrado News: </b>revista digital para toda la comunidad elaborada por alumnos</li>
+                        <li><b>Ted Ed:</b> evento donde los chicos viven la experiencia de convertirse en oradores de un evento
+                            tipo TED como parte de un proceso educativo que los inspira para difundir sus ideas.</li>
+                        <li><b>Visión Pastoral:</b> materia destinada a profundizar el  trabajo en valores desde el encuentro, la
+                            acción solidaria, talleres y convivencias</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-3   col-lg-3 col-xl-3 " >
+<!--            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-3   col-lg-3 col-xl-3 order-sm-1 order-1  order-md-2 order-lg-2 order-xl-2" >-->
+
+                <div class="row" style="margin-bottom: 5%;margin-top: 20%">
+                    <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-10 offset-lg-1 col-xl-10 offset-xl-1">
+
+                        <div class="vertical-menu">
+                            <a href="#" class="active">Información</a>
+                            <a href="recursosSecundario.html">Recursos</a>
+                            <a href="calendario.html">Calendario</a>
+                        </div>
+                       <!-- <button onclick="openModal();currentSlide(1)" class="btn btn-light" id="btnGaleriaSecundaria">Ver Galería</button>-->
+                    </div>
+                </div>
+
+                <!--
+                               <div class="row">
+                                   <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+                                         <a href="recursosSecundario.html"> <button type="button" class="btn btnRecursosSecundario robotoCondensed">Recursos Secundaria</button></a>
+                                   </div>
+                                   <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+                                         <button type="button" id="btnGaleriaSecundaria" onclick="openModal();currentSlide(1)">Ver Album</button>
+                                   </div>
+                               </div>
+                                <div class="row">
+                                    <div class="col-6 offset-3 col-sm-6 offset-sm-3 col-md-6 offset-md-3 col-lg-6 offset-lg-3 col-xl-6 offset-xl-3">
+                                        <a href="calendario.html"><button class="btn btnInfo robotoCondensed">Calendario   <i class="fa fa-calendar" aria-hidden="true"></i></button> </a>
+                                    </div>
+                                </div>
+
+                                -->
+                <!-- Images used to open the lightbox -->
+                <div class="row">
+                    <p style="font-size: 8px;font-style: italic;text-align: center;padding-bottom: 0px;margin-bottom: 0px">Hacer clic en la imagen para ver la galería</p>
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(69).jpg" style="width: 200%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(84).jpeg" style="width: 200%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(40).jpg" style="width: 200%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(38).jpg" style="width: 200%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(33).jpg" style="width: 200%" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(9).jpg" style="width: 200%" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(16).jpg" style="width: 200%" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(10).jpg" style="width: 200%" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(23).jpg" style="width: 200%" onclick="openModal();currentSlide(9)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(1).jpg" style="width: 200%" onclick="openModal();currentSlide(10)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(19).jpg" style="width: 200%" onclick="openModal();currentSlide(11)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(11).jpg" style="width: 200%" onclick="openModal();currentSlide(12)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(48).jpg" style="width: 200%" onclick="openModal();currentSlide(13)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(36).jpg" style="width: 200%" onclick="openModal();currentSlide(14)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(71).jpg" style="width: 200%" onclick="openModal();currentSlide(15)" class="hover-shadow">
+                    </div>
+
+                </div>
+                <div class="row2">
+                    <div class="column2">
+                        <img src="images/secundario/secundaria%20(84).jpeg" style="width: 200%" onclick="openModal();currentSlide(16)" class="hover-shadow">
+                    </div>
+
+                </div>
+<!--                <div class="row2">-->
+<!--                    <div class="column2">-->
+<!--                        <img src="images/secundario/secundaria%20(80).jpeg" style="width: 200%" onclick="openModal();currentSlide(17)" class="hover-shadow">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+<!--                <div class="row2">-->
+<!--                    <div class="column2">-->
+<!--                        <img src="images/secundario/secundaria%20(78).jpg" style="width: 200%" onclick="openModal();currentSlide(18)" class="hover-shadow">-->
+<!--                    </div>-->
+
+<!--                </div>                <div class="row2">-->
+<!--                    <div class="column2">-->
+<!--                        <img src="images/secundario/secundaria%20(63).jpg" style="width: 200%" onclick="openModal();currentSlide(19)" class="hover-shadow">-->
+<!--                    </div>-->
+
+<!--                </div>                <div class="row2">-->
+<!--                    <div class="column2">-->
+<!--                        <img src="images/secundario/secundaria%20(27).jpg" style="width: 200%" onclick="openModal();currentSlide(20)" class="hover-shadow">-->
+<!--                    </div>-->
+
+<!--                </div>-->
+
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 20</div>
+                            <img src="images/secundario/secundaria%20(69).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 20</div>
+                            <img src="images/secundario/secundaria%20(84).jpeg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 20</div>
+                            <img src="images/secundario/secundaria%20(40).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 20</div>
+                            <img src="images/secundario/secundaria%20(38).jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 20</div>
+                            <img src="images/secundario/secundaria%20(33).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 20</div>
+                            <img src="images/secundario/secundaria%20(9).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 20</div>
+                            <img src="images/secundario/secundaria%20(16).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 20</div>
+                            <img src="images/secundario/secundaria%20(10).jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">9 / 20</div>
+                            <img src="images/secundario/secundaria%20(23).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">10 / 20</div>
+                            <img src="images/secundario/secundaria%20(1).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">11 / 20</div>
+                            <img src="images/secundario/secundaria%20(19).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">12 / 20</div>
+                            <img src="images/secundario/secundaria%20(11).jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">13 / 20</div>
+                            <img src="images/secundario/secundaria%20(48).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">14 / 20</div>
+                            <img src="images/secundario/secundaria%20(36).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">15 / 20</div>
+                            <img src="images/secundario/secundaria%20(71).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">16 / 20</div>
+                            <img src="images/secundario/secundaria%20(84).jpeg" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">17 / 20</div>
+                            <img src="images/secundario/secundaria%20(80).jpeg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">18 / 20</div>
+                            <img src="images/secundario/secundaria%20(78).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">19 / 20</div>
+                            <img src="images/secundario/secundaria%20(63).jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">20 / 20</div>
+                            <img src="images/secundario/secundaria%20(27).jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+<!--                        <div class="column">-->
+<!--                            <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">-->
+<!--                        </div>-->
+
+<!--                        <div class="column">-->
+<!--                            <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">-->
+<!--                        </div>-->
+
+<!--                        <div class="column">-->
+<!--                            <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">-->
+<!--                        </div>-->
+
+<!--                        <div class="column">-->
+<!--                            <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">-->
+<!--                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://www.instagram.com/colegio.nssc/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angles-up"></i></button>
+
+    <footer>
+        <div class="row d-flex justify-content-center" style="text-align: center">
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-3 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 ">
+                <i class="fa-solid fa-location-dot"></i><p class="d-inline"> Av. Crámer 2370 (C1428CTL) - C.A.B.A., Argentina</p><br>
+                <img src="images/iconos/phone-alt.svg" style="width: 15px"><p class="d-inline"> +54 11 4781-1277 / 4783-8560 / 4788-9707</p>
+                <!--            </div>-->
+                <!--            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-3 offset-md-1 col-lg-3 offset-lg-3 col-xl-3 offset-xl-3">-->
+                <br><a href="https://www.instagram.com/colegio.nssc/" target="_blank"><i class="fa-brands fa-instagram" id="logoIgFooter"></i><p class="d-inline" id="linkIgFooter"> @colegio.nssc</p></a><br>
+                <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" target="_blank"> <i class="fa-brands fa-facebook" id="logoFbFooter"></i><p class="d-inline"id="linkFbFooter"> /Colegio Nuestra Señora del Sagrado Corazón</p></a>
+                <br><br>       <p style="font-size: 0.6rem">Copyright 2022</p>
+            </div>
+        </div>
+        </footer>
+</div>
+<script>
+    //Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction();myFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+
+    //    Sticky navbar
+    // When the user scrolls the page, execute myFunction
+    // window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    let navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    let sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    //    end sticky
+
+    //sidenav
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //end sidenav
+
+//    menu mobile
+    function openNav2() {
+        document.getElementById("mySidepanel2").style.width = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav2() {
+        document.getElementById("mySidepanel2").style.width = "0";
+    }
+//    end menu mobile
+
+//    modal fotos
+    // Open the Modal
+    function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    // Close the Modal
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+
+    // end modal fotos
+</script>
+</body>
+</html>

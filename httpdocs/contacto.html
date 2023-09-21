@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Styles-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b2e577da77.js" crossorigin="anonymous"></script>
+
+    <!--Javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/functions.js"></script>
+
+    <title>Colegio Nuestra Señora del Sagrado Corazón</title>
+
+
+</head>
+<body>
+<div>
+    <header>
+        <div class="row d-flex justify-content-center align-items-center" id="bannerHeader">
+            <img src="images/bannerHeaderDesktop.png" style="width: 100%" id="headerDesktop">
+            <img src="images/bannerHeaderMobile.png" style="width: 100%" id="headerMobile">
+        </div>
+
+        <nav class="navbar navbar-expand-lg cn-stick-nav" id="navbar2">
+            <div class="container-fluid">
+
+                <div class="navbar-nav" id="navbarNav" >
+
+                    <button class="navbar-toggler position-absolute top-50 start-50 translate-middle " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: #F3F3F3">
+                        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse position-absolute top-50 start-50 translate-middle" id="navbarSupportedContent" >
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html" id="btnInicioNavbar" >INICIO</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NOSOTROS</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="historia.html" id="btnHistoriaNavbar">Nuestra historia</a></li>
+                                    <li><a class="dropdown-item" href="nuestroLugar.html" id="btnLugarNavbar">Nuestro lugar</a></li>
+                                    <li><a class="dropdown-item" href="equipoDirectivo.html" id="btnEquipoNavbar">Equipo directivo</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLinkNiveles" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NIVELES</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="inicial.html" id="btnInicialNavbar">Inicial</a></li>
+                                    <li><a class="dropdown-item" href="primario.html" id="btnPrimarioNavbar">Primario</a></li>
+                                    <li><a class="dropdown-item" href="secundario.html" id="btnSecundarioNavbar">Secundario</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="pastoral.html" id="btnPastoralNavbar" >PASTORAL</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="somosVedruna.html" id="btnVedrunaNavbar" >SOMOS VEDRUNA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="contacto.html" id="btnContactoNavbar" >CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-right align-items-center"><button type="button" class="nav-link" id="btnInscripciones" onclick="openNav()">INSCRIPCIONES</button>
+                    <a href="https://www.instagram.com/colegio.nssc/" target="_blank"><i class="fa-brands fa-instagram" id="logoIg"></i></a>
+                    <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" target="_blank"> <i class="fa-brands fa-facebook" id="logoFb"></i></a>
+                </div>
+            </div>
+        </nav>
+        <div class="row" id="lateralMenu">
+            <div class="col-4 col-sm-4 col-md-4">
+                <button class="openbtn" onclick="openNav2()" id="btnSidePanel2">&#9776;</button>
+            </div>
+            <div class="col-4 offset-4 col-sm-4 offset-sm-4 col-md-4 offset-md-4 d-flex justify-content-right align-items-center">
+                <button type="button" class="nav-link " id="btnInscripcionesSidebar" onclick="openNav()">INSCRIPCIONES</button>
+            </div>
+        </div>
+
+        <div id="mySidenav" class="sidenav d-flex justify-content-center">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdIMJj0ViOuOVf0eYI6IufLeOOtFMwoLCzxqxZ3oCd9zgBJlw/viewform?embedded=true" width="1000px" height="100%" frameborder="0" marginheight="0" marginwidth="0" >Loading…</iframe>
+
+        </div>
+        <div id="mySidepanel2" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="index.html" id="btnInicioSidebar" >INICIO</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarDropdownMenuLinkNosotros" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NOSOTROS</a>
+                    <ul class="dropdown-menu" aria-labelledby="sidebarDropdownMenuLink">
+                        <li ><a class="dropdown-item" href="historia.html" id="btnHistoriaSidebar">Nuestra historia</a></li>
+                        <li><a class="dropdown-item" href="nuestroLugar.html" id="btnLugarSidebar">Nuestro lugar</a></li>
+                        <li><a class="dropdown-item" href="equipoDirectivo.html" id="btnEquipoSidebar">Equipo directivo</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="sidebarDropdownMenuLinkNiveles" role="button" data-bs-toggle="dropdown" aria-expanded="false" >NIVELES</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="inicial.html" id="btnInicialSidebar">Inicial</a></li>
+                        <li><a class="dropdown-item" href="primario.html" id="btnPrimarioSidebar">Primario</a></li>
+                        <li><a class="dropdown-item" href="secundario.html" id="btnSecundarioSidebar">Secundario</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="pastoral.html" id="btnPastoralSidebar" >PASTORAL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="somosVedruna.html" id="btnVedrunaSidebar" >SOMOS VEDRUNA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="contacto.html" id="btnContactoSidebar" >CONTACTO</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/colegio.nssc/" target="_blank"><i class="fa-brands fa-instagram " id="logoIgSideBar"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" target="_blank"> <i class="fa-brands fa-facebook" id="logoFbSidebar"></i></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row" id="linearColors">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="border-top: var(--naranja) solid 5px"></div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="border-top: var(--verde) solid 5px"></div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4" style="border-top: var(--violeta) solid 5px"></div>
+
+        </div>
+    </header>
+
+    <section id="contacto">
+        <div class="row" style="margin-bottom: 5%">
+            <div class="col-10 offset-1 col-sm-10 offset-1 col-md-5 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1">
+                <h5 class="tituloNewParrafo azul">
+                    Dirección
+                </h5>
+                <p class="robotoCondensed">Av. Crámer 2370  (C1428CTL) - C.A.B.A., Argentina</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.6538982263723!2d-58.466035785225316!3d-34.56231746281474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb67ff2e2543f%3A0x1d4df608610896!2sAv.%20Cr%C3%A1mer%202370%2C%20C1428CTL%20CABA!5e0!3m2!1ses!2sar!4v1635471947123!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+            <div class="col-10 offset-1 col-sm-10 offset-1 col-md-5 col-lg-5 col-xl-5" >
+                <h5 class="tituloNewParrafo azul">Tel</h5>
+                <p class="robotoCondensed">+54 11 4781-1277 / 4783-8560 / 4788-9707</p>
+
+                <h5 class="tituloNewParrafo azul">Mails</h5>
+                <p class="robotoCondensed"><b>Nivel Inicial:</b> <a href="mailto:nivel.inicial@sagradodebelgrano.edu.ar" target="_blank" class="negro">nivel.inicial@sagradodebelgrano.edu.ar</a></p>
+                <p class="robotoCondensed"><b>Nivel Primario:</b> <a href="mailto:nivel.primario@sagradodebelgrano.edu.ar" target="_blank"  class="negro">nivel.primario@sagradodebelgrano.edu.ar</a></p>
+                <p class="robotoCondensed"><b>Nivel Secundario:</b> <a href="mailto:nivel.secundario@sagradodebelgrano.edu.ar" target="_blank"  class="negro">nivel.secundario@sagradodebelgrano.edu.ar</a></p>
+                <p class="robotoCondensed"><b>Secretaría Secundario:</b> <a href="mailto:secretaria.secundario@sagradodebelgrano.edu.ar" target="_blank"  class="negro">secretaria.secundario@sagradodebelgrano.edu.ar</a></p>
+                <p class="robotoCondensed"><b>Administración:</b> <a href="mailto:admsca23@sagradodebelgrano.edu.ar" target="_blank"  class="negro">admsca23@sagradodebelgrano.edu.ar</a></p>
+
+                <h5 class="tituloNewParrafo azul">Seguinos en las redes</h5>
+                <a href="https://www.instagram.com/colegio.nssc/" target="_blank"><i class="fa-brands fa-instagram"></i><p class="d-inline"> @colegio.nssc</p></a><br>
+                <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" target="_blank"> <i class="fa-brands fa-facebook" id></i><p class="d-inline"> /colegio.nssc</p></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://www.instagram.com/colegio.nssc/" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angles-up"></i></button>
+
+    <footer>
+        <div class="row d-flex justify-content-center" style="text-align: center">
+            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-3 offset-md-1 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1 ">
+                <i class="fa-solid fa-location-dot"></i><p class="d-inline"> Av. Crámer 2370 (C1428CTL) - C.A.B.A., Argentina</p><br>
+                <img src="images/iconos/phone-alt.svg" style="width: 15px"><p class="d-inline"> +54 11 4781-1277 / 4783-8560 / 4788-9707</p>
+                <!--            </div>-->
+                <!--            <div class="col-10 offset-1 col-sm-10 offset-sm-1 col-md-3 offset-md-1 col-lg-3 offset-lg-3 col-xl-3 offset-xl-3">-->
+                <br><a href="https://www.instagram.com/colegio.nssc/" target="_blank"><i class="fa-brands fa-instagram" id="logoIgFooter"></i><p class="d-inline" id="linkIgFooter"> @colegio.nssc</p></a><br>
+                <a href="https://www.facebook.com/Colegio-Nuestra-Se%C3%B1ora-del-Sagrado-Coraz%C3%B3n-105172268862868" target="_blank"> <i class="fa-brands fa-facebook" id="logoFbFooter"></i><p class="d-inline"id="linkFbFooter"> /Colegio Nuestra Señora del Sagrado Corazón</p></a>
+                <br><br>       <p style="font-size: 0.6rem">Copyright 2022</p>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    //Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction();myFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
+
+    //    Sticky navbar
+    // When the user scrolls the page, execute myFunction
+    // window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    let navbar = document.getElementById("navbar");
+
+    // Get the offset position of the navbar
+    let sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
+    }
+    //    end sticky
+
+    //sidenav
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+    //end sidenav
+    function openNav2() {
+        document.getElementById("mySidepanel2").style.width = "250px";
+    }
+
+    /* Set the width of the sidebar to 0 (hide it) */
+    function closeNav2() {
+        document.getElementById("mySidepanel2").style.width = "0";
+    }
+</script>
+</body>
+</html>

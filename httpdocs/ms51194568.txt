@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "sagradodebelgrano.edu.ar",
+  "Id": "31271ea4-9d4f-4699-9d82-2c20ea59bfe6"
+}

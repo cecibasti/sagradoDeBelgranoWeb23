@@ -1,0 +1,1836 @@
+/*font-family: 'Roboto', sans-serif;*/
+/*font-family: 'Roboto Condensed', sans-serif;*/
+/*font-family: 'Roboto Mono', monospace;*/
+/*font-family: 'Roboto Slab', serif;*/
+/*font-family: 'Abhaya Libre', serif;*/
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+home{
+    height: 100vh;
+    width: 100vw;
+}
+
+:root {
+--azulLogo: #0034A1;
+--naranja: #F8971E;
+--verde: #7CBB45;
+--violeta: #742687;
+--azul: #0877BF;
+--negro: #000000;
+--blanco: #FFFFFF;
+--gris: #F3F3F3;
+}
+
+@font-face {
+    font-family: Bugaki;
+    src: url("/fonts/bugaki/Bugaki.ttf");
+}
+
+.azulLogo{color: var(--azulLogo)}
+.azul{color: var(--azul)}
+.naranja{color: var(--naranja)}
+.violeta{color: var(--violeta)}
+.verde{color: var(--verde)}
+.negro{color: var(--negro)}
+.blanco{color: var(--blanco)}
+.gris{color: var(--gris)}
+
+h1{
+    font-family: 'Abhaya Libre', serif;
+    text-align: center;
+}
+#tituloIndex{
+    color: #0034A1;
+}
+h2,h3{
+    font-family: 'Roboto Slab', serif;
+}
+h4,h5{
+    font-family: 'Roboto', sans-serif;
+}
+
+.bugaki{
+    font-family: Bugaki;
+}
+ul,li,table{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+#subtituloSeccion{
+    color: #0877BF;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tituloNewParrafo{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.btnRecursosInicial{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+    background-color: transparent;
+    border-top: 2px dashed var(--naranja);
+    border-bottom: 2px dashed var(--naranja);
+    width: 100%;
+}
+.btnRecursosPrimario{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+    background-color: transparent;
+    border-top: 2px dashed var(--verde);
+    border-bottom: 2px dashed var(--verde);
+    /*border-radius: 10px;*/
+    width: 100%;
+}
+.btnRecursosSecundario{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #000000;
+    background-color: transparent;
+    border-top: 2px dashed var(--violeta);
+    border-bottom: 2px dashed var(--violeta);
+    width: 100%;
+}
+#proyectos{
+    marigin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.btnInicial{
+    background-image: url("/images/fondos/fondoVerde.png");
+    color: white;
+    border-radius: 20%;
+    border: white;
+    font-family: Bugaki;
+    width: 200px;
+    height: 200px;
+    /*padding: 70px;*/
+}
+.btnPrimaria{
+    background-image: url("/images/fondos/fondoNaranja.png");
+    color: white;
+    border-radius: 20%;
+    border: white;
+    font-family: Bugaki;
+    width: 200px;
+    height: 200px;
+
+    /*padding: 70px;*/
+}
+.btnSecundaria{
+    background-image: url("/images/fondos/fondoVioleta.png");
+    color: white;
+    border-radius: 20%;
+    border: white;
+    font-family: Bugaki;
+    width: 200px;
+    height: 200px;
+
+    /*padding: 70px;*/
+}
+
+.btnGaleriaSecundaria{
+    background-image: url("/images/fondos/fondoVioleta.png");
+    color: white;
+    border-radius: 5px;
+    border: white;
+    font-family: Bugaki;
+    width: 80%;
+    height: 50px;
+    margin-top: 30%;
+
+}
+#btnGaleriaInicial{
+    background-image: url("/images/fondos/fondoVerde.png");
+    color: white;
+    border-radius: 5px;
+    border: white;
+    font-family: Bugaki;
+    width: 80%;
+    height: 50px;
+    margin-top: 30%;
+
+}
+#btnGaleriaPrimaria{
+    background-image: url("/images/fondos/fondoNaranja.png");
+    color: white;
+    border-radius: 5px;
+    border: white;
+    font-family: Bugaki;
+    width: 80%;
+    height: 50px;
+    margin-top: 30%;
+}
+
+#titulosRecursosIni,#titulosRecursosPrimaria,#titulosRecursosSecu{
+    margin-top: 10%;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.txtVisita{
+    margin-top: 50px;
+        text-align: center;
+    font-size: 16px;
+    color: #0877BF;
+}
+.pieDeFoto{
+    font-size: 10px;
+    color: #555555;
+    text-align: center;
+
+    padding: 10px;
+}
+
+#revista{
+width: 100%;
+    height: 70%;
+    margin-bottom: 50%;
+}
+a{
+    text-decoration: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+a:link{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+a:hover{
+    color: #0877BF;
+}
+a:checked{
+    color: #F3F3F3;
+}
+.linksText{
+  color: #0877BF;
+}
+
+.roboto{font-family: 'Roboto', sans-serif;}
+.robotoCondensed{font-family: 'Roboto Condensed', sans-serif;}
+.robotoMono{font-family: 'Roboto Mono', monospace;}
+.robotoSlab{font-family: 'Roboto Slab', serif;}
+.abhaya{font-family: 'Abhaya Libre', serif;}
+
+.navbar{
+    background-color: var(--azul);
+    width: 100%;
+    height: 40px;
+    z-index: 100;
+}
+.nav-link{
+    color: #FFFFFF;
+    padding:10px;
+    margin: 0px;
+}
+.nav-link:hover{
+    background-color: #FFFFFF;
+    color: var(--azul);
+}
+.nav-item{
+    padding:0px;
+    margin-top: -15px;
+    font-size: 14px;
+}
+#navbarDropdownMenuLinkLey{
+    font-size: 0.4rem;
+}
+#btnLey1Navbar,#btnLey2Navbar,#btnLey3Navbar{
+    font-size: 0.5rem;
+}
+#btnInscripciones,#btnInscripcionesSidebar{
+    background-color: #FFFFFF;
+    border: none;
+    padding: 8px;
+    color: var(--azul);
+}
+#btnInscripciones:hover{
+    background-color: var(--azul);
+    color: #FFFFFF;
+}
+#btnInscripcionesSidebar:hover{
+    background-color: var(--azul);
+    color: #FFFFFF;
+}
+#imgMJV{
+    width: 100%;
+    margin-top: 5px;
+    /*margin-left: 33.33%;*/
+}
+#imgElManso,#imgVedrunaPastoral{
+    width: 100%;
+}
+#imgSomosVedruna{
+    width: 50%;
+    margin-left: 33.33%;
+    margin-bottom: 30px;
+}
+.imgPastoral{
+    width: 100%;
+    padding-bottom: 10px;
+}
+#imgSomosVedrunaPalabras,#imgMJVLA, #imgArbol{
+    width: 80%;
+}
+
+#imgJoaquinaDiversidad{
+    width: 80%;
+/*    margin-left: 33.33%; */
+    margin-bottom: 30px;
+}
+footer{
+    background-image: url("images/fondoAzul.png");
+    background-size: 100%;
+    /*height: 30vh;*/
+    width: 100%;
+    padding-top: 15px;
+    color: #f3f3f3;
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+}
+#linkIgFooter,#linkFbFooter,#logoIgFooter,#logoFbFooter{
+    color: #f3f3f3;
+}
+#bannerHeader{
+    /*background: rgb(229,230,232);*/
+    /*background: linear-gradient(3deg, rgba(229,230,232,1) 0%, rgba(245,246,248,1) 30%, rgba(229,230,232,1) 70%);*/
+}
+
+#banner{
+    background-color: #0877BF;
+}
+#imgVedrunaPortada{
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+#imgBannerPortada{
+    background-color: #0877BF;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+#imgSecundarioPortada{
+    background-color: #0877BF;
+    height: 150px;
+    width: 30%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#imgInicialPortada{
+    background-color: #0877BF;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+#imgPrimarioPortada{
+    background-color: #0877BF;
+    height: 150px;
+    margin: 0px;
+    padding: 0px;
+}
+#tituloHeader,#subtituloHeader{font-family: 'Abhaya Libre', serif; text-align: center}
+#cintaNiveles{
+    height: auto;
+    background-image: url("/images/fondoBlanco2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#cintaValores{
+    /*background-color: #f3f3f3;*/
+    background-image: url("/images/fondoBlanco2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#logoFb, #logoIg{
+    color: #FFFFFF;
+    margin-left: 10px;
+}
+
+#seccionInicial{
+    background-image: url("images/fondos/fondoNaranja.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    color: #f3f3f3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#seccionPrimario{
+    background-image: url("images/fondos/fondoVerde.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    color: #f3f3f3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#seccionSecundario{
+    background-image: url("images/fondos/fondoVioleta.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    color: #f3f3f3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+#seccionGeneral{
+    background-image: url("images/fondoAzul.png");
+    background-repeat:no-repeat;
+    background-size: 100%;
+    color: #f3f3f3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#borderInicial{
+    border-left: 2px dashed var(--naranja);
+    margin-left: 20px;
+}
+#borderPrimario{
+    border-left: 2px dashed var(--verde);
+    margin-left: 20px;
+}
+#borderSecundario{
+    border-left: 2px dashed var(--violeta);
+    margin-left: 20px;
+}
+#borderGeneral{
+    border-left: 2px dashed var(--azul);
+    margin-left: 20px;
+}
+
+.imgHistoria{
+    width: 100%;
+}
+.txtHistoria{
+    font-size: 12px;
+
+}
+.txtIndent{
+    text-indent: 20%;
+}
+
+#rowCalendar{
+    padding-top: 5%;
+    margin-bottom: 5%;
+}
+.borderCalendario{
+    border-left: 2px dashed var(--azul);
+    margin-left: 20px;
+
+}
+/*Menu mobile*/
+/* The sidepanel menu mobile */
+.sidepanel {
+    height: 100%; /* Specify a height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #0877BF; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+/* The sidepanel links */
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    margin-left: 5%;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+#btnInicialSidebar, #btnPrimarioSidebar, #btnSecundarioSidebar,#btnHistoriaSidebar,#btnEquipoSidebar,#btnLugarSidebar,#btnLey1Sidebar,#btnLey2Sidebar,#btnLey3Sidebar{
+    color: #0877BF;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #0877BF;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* Fin menu mobile */
+
+/* Inicio modal Inscripciones/Publicidad */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    filter:alpha(opacity=70);
+    -moz-opacity:0.7;
+    -khtml-opacity: 0.7;
+    opacity: 0.7;
+    z-index: 100;
+    display: none;
+}
+.cnt223 a{
+    text-decoration: none;
+}
+.popup{
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    position: fixed;
+    z-index: 101;
+}
+.cnt223{
+    min-width: 60vw;
+    width: 60vw;
+    height: 100%;
+    margin: 50px auto;
+    position: relative;
+    z-index: 103;
+    padding: 0px 0px;
+    border-radius: 5px;
+/*    box-shadow: 0 2px 5px #000;*/
+}
+.cnt223 p{
+    clear: both;
+    color: #555555;
+    /* text-align: justify; */
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.cnt223 p a{
+    color: #FEFEFE;
+    font-weight: bold;
+    font-size: 10px;
+}
+.cnt223 .x{
+    float: right;
+    height: 35px;
+    left: 22px;
+    position: relative;
+    top: -25px;
+    width: 35px;
+}
+.cnt223 .x:hover{
+    cursor: pointer;
+}
+.imgModalInscriptions{
+    width: 100%;
+}
+#btnModalConsulta{
+   align-items: center;
+    border: solid 1px;
+    border-color: black;
+    background-color:white;
+    color: #0877BF;
+    margin-left: 45%;
+    margin-top: 4%;
+    margin-bottom: 1%;
+    font-size: 0.8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Fin Modal Inscripciones */
+
+@media screen and (max-width: 576px){
+    #btnModalConsulta{
+        font-size: 0.3rem;
+    }
+    .cnt223{
+        width: 90vw;
+    }
+
+    #imgSomosVedrunaPalabras,#imgMJVLA, #imgArbol{
+        width: 100%;
+    }
+    #imgMJV{
+        width: 100%;
+        margin-top: 5px;
+        /*margin-left: 33.33%;*/
+    }
+    #imgElManso,#imgVedrunaPastoral{
+        width: 100%;
+    }
+
+    #imgJoaquinaDiversidad{
+        width: 100%;
+        /*    margin-left: 33.33%; */
+        margin-bottom: 30px;
+    }
+
+    #headerDesktop{
+        display: none;
+    }
+.icon-bar{
+    display: none;
+}
+
+    #tituloIndex{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #cintaNiveles{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    #cintaValores{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .caption span.border {
+        font-size: 0.5rem;
+        letter-spacing: 3px;
+        padding: 3px;
+    }
+#txtBorderValores,#txtBorderColegio,#txtIndexCarisma,#txtIndexNiveles{
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding: 4px;
+}
+    #btnInscripciones, #btnInscripcionesSidebar{
+        padding: 3px;
+        font-size: 0.9rem;
+    }
+    #btnInscripciones{
+        display: none;
+    }
+    #navbar2{
+        display: none;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 767px){
+    .cnt223{
+        width: 80vw;
+    }
+
+    #imgSomosVedrunaPalabras,#imgMJVLA, #imgArbol{
+        width: 100%;
+    }
+
+    #imgJoaquinaDiversidad{
+        width: 100%;
+        /*    margin-left: 33.33%; */
+        margin-bottom: 30px;
+    }
+    #headerDesktop{
+        display: none;
+    }
+    #txtBorderValores,#txtBorderColegio,#txtIndexCarisma,#txtIndexNiveles{
+
+        font-size: 18px;
+        letter-spacing: 3px;
+        padding: 4px;
+    }
+
+    .icon-bar{
+        display: none;
+    }
+
+    #tituloIndex{
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #cintaNiveles{
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    #cintaValores{
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .caption span.border {
+        font-size: 22px;
+        letter-spacing: 5px;
+
+    }
+    #btnInscripciones,#btnInscripcionesSidebar{
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+    #btnInscripciones{
+        display: none;
+    }
+
+    #navbar2{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .cnt223{
+        width: 80vw;
+    }
+    .icon-bar{
+        display: none;
+    }
+    #headerDesktop{
+        display: none;
+    }
+    #txtBorderValores,#txtBorderColegio,#txtIndexCarisma,#txtIndexNiveles{
+        font-size: 20px;
+        letter-spacing: 3px;
+        padding: 5px;
+    }
+    #navbar2{
+        display: none;
+    }
+    #tituloIndex{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    #cintaNiveles{
+             margin-top: 75px;
+             margin-bottom: 30px;
+         }
+    #cintaValores{
+        margin-top: 75px;
+        margin-bottom: 75px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .caption span.border {
+        font-size: 22px;
+        letter-spacing: 5px;
+
+    }
+    #btnInscripciones,#btnInscripcionesSidebar{
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+    #btnInscripciones{
+        display: none;
+    }
+
+}
+
+@media screen and (orientation: landscape){
+
+    .icon-bar{
+        display: none;
+    }
+    #txtBorderValores,#txtBorderColegio,#txtIndexCarisma,#txtIndexNiveles{
+        font-size: 20px;
+        letter-spacing: 3px;
+        padding: 5px;
+    }
+    /*#navbar2{*/
+    /*    display: none;*/
+    /*}*/
+    #tituloIndex{
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    #cintaNiveles{
+        margin-top: 75px;
+        margin-bottom: 30px;
+    }
+    #cintaValores{
+        margin-top: 75px;
+        margin-bottom: 75px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .caption span.border {
+        font-size: 22px;
+        letter-spacing: 5px;
+
+    }
+    #btnInscripciones,#btnInscripcionesSidebar{
+        padding: 5px;
+        font-size: 0.9rem;
+    }
+
+
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    #headerMobile{
+        display: none;
+    }
+    #txtBorderValores,#txtBorderColegio,#txtIndexCarisma,#txtIndexNiveles{
+        font-size: 22px;
+        letter-spacing: 8px;
+        padding: 15px;
+    }
+    #mySidepanel2{
+        display: none;
+    }
+    #btnSidePanel2{
+        display: none;
+    }
+    #tituloIndex{
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+    #cintaNiveles{
+        /*margin-top: 90px;*/
+        /*margin-bottom: 30px;*/
+    }
+    #cintaValores{
+        /*margin-top: 90px;*/
+        /*margin-bottom: 90px;*/
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .caption span.border {
+        font-size: 24px;
+        letter-spacing:8px;
+
+    }
+    #btnInscripciones,#btnInscripcionesSidebar{
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+    #btnInscripcionesSidebar{
+        display: none;
+    }
+
+}
+@media screen and (min-width: 1200px){
+    #headerMobile{
+        display: none;
+    }
+    #btnInscripcionesSidebar{
+        display: none;
+    }
+
+
+    #btnInscripcionesSidebar{
+        display: none;
+    }
+    #txtBorderValores,#txtBorderColegio,#txtIndexCarisma,#txtIndexNiveles{
+        font-size: 25px;
+        letter-spacing: 10px;
+        padding: 18px;
+    }
+    #mySidepanel2{
+        display: none;
+    }
+    #btnSidePanel2{
+        display: none;
+    }
+    #tituloIndex{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    .titleIndex{
+        font-size:25px;
+    }
+    #cintaNiveles{
+        /*margin-top: 15px;*/
+        /*margin-bottom: 15px;*/
+    }
+    #cintaValores{
+        /*margin-top: 100px;*/
+        /*margin-bottom: 150px;*/
+        /*padding-top: 15px;*/
+        /*padding-bottom: 15px;*/
+        /*margin-top: 20px;*/
+        /*margin-bottom: 25px;*/
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
+}
+/* prueba para modal lightbox gallerias*/
+
+.row2 > .column2 {
+    padding: 5px 8px;
+}
+
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column2 {
+    /*float: left;*/
+     width: 50%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 600px;
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Hide the slides by default */
+.mySlides {
+    display: none;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Caption text */
+.caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+img.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+img.hover-shadow {
+    transition: 0.3s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header{
+    background-color: #0877BF;
+    color: white;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    border-radius: 20%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 20%;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    border-radius: 20%;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    /*background-color: var(--azul);*/
+    background-image: url("images/fondoAzul.png");
+    color: white;
+    font-family: Bugaki;
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: var(--azul);
+    color: white;
+    transform: rotateY(180deg);
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+}
+
+.textCard{
+    font-size: 12px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.btnCard{
+    color: #FFFFFF;
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius: 20%;
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+#mySVG {
+    position: fixed;
+    top: 15%;
+    width: 400px;
+    height: 210px;
+    margin-left:-50px;
+}
+
+.div1 {
+    /*width: 685px;*/
+    /*height: 221px;*/
+    /*left: 162px;*/
+    /*top: 2911px;*/
+    color: #FFFFFF;
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    margin: 0px;
+    margin: 0px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+.div2 {
+    /*width: 370px;*/
+    /*height: 290px;*/
+    /*left: 162px;*/
+    /*top: 3119px;*/
+
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-left: 35px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.div3 {
+    /*width: 310px;*/
+    /*height: 290px;*/
+    /*left: 532px;*/
+    /*top: 3119px;*/
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+.div4 {
+    /*width: 490px;*/
+    /*height: 180px;*/
+    /*left: 850px;*/
+    /*top: 2872px;*/
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 30px;}
+.div5 {
+    /*width: 490px;*/
+    /*height: 170px;*/
+    /*left: 851px;*/
+    /*top: 3058px;*/
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+.div6 {
+    /*width: 490px;*/
+    /*height: 170px;*/
+    /*left: 850px;*/
+    /*top: 3226px;*/
+    font-family: 'Rubik';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    /* or 140% */
+    margin: 0px;
+    padding-left: 35px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    color: #FFFFFF;
+}
+
+
+.imgNosotros{
+    width: 50%;
+}
+
+
+/* animista*/
+.kenburns-bottom {
+    -webkit-animation: kenburns-bottom 5s ease-out both;
+    animation: kenburns-bottom 5s ease-out both;
+}
+.tracking-in-expand-fwd {
+    -webkit-animation: tracking-in-expand-fwd 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand-fwd 1.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+}
+.text-focus-in {
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-1 20:57:49
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation kenburns-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes kenburns-bottom {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 84%;
+        transform-origin: 50% 84%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(15px);
+        transform: scale(1.25) translateY(15px);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+}
+@keyframes kenburns-bottom {
+    0% {
+        -webkit-transform: scale(1) translateY(0);
+        transform: scale(1) translateY(0);
+        -webkit-transform-origin: 50% 84%;
+        transform-origin: 50% 84%;
+    }
+    100% {
+        -webkit-transform: scale(1.25) translateY(15px);
+        transform: scale(1.25) translateY(15px);
+        -webkit-transform-origin: bottom;
+        transform-origin: bottom;
+    }
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-1 21:2:59
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+@keyframes tracking-in-expand-fwd {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-transform: translateZ(-700px);
+        transform: translateZ(-700px);
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+@keyframes text-focus-in {
+    0% {
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+
+
+.fade-in-fwd {
+    -webkit-animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: fade-in-fwd 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-3 11:4:24
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+@keyframes fade-in-fwd {
+    0% {
+        -webkit-transform: translateZ(-80px);
+        transform: translateZ(-80px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.heartbeat {
+    -webkit-animation: heartbeat 3.5s ease-in-out infinite both;
+    animation: heartbeat 3.5s ease-in-out infinite both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-3 11:12:32
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation heartbeat
+ * ----------------------------------------
+ */
+@-webkit-keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+.rotate-center {
+    -webkit-animation: rotate-center 3s ease-in-out infinite both;
+    animation: rotate-center 3s ease-in-out infinite both;
+}
+
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-7-3 11:17:13
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/*fin animista*/
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 102;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+    background-color: #000;
+}
+
+
+.facebook {
+    background: #3B5998;
+    color: white;
+
+}
+.instagram {
+    background: #F8971E;
+    /*background: #f40083;*/
+    color: white;
+}
+
+/*fin social media*/
+/*boton para subir*/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: var(--verde); /* Set a background color */
+    color: white; /* Text color */
+    opacity: 0.9;
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*sticky navbar*/
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 60px;
+}
+/* end sticky navbar*/
+
+
+/* SIDENAV */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    right: 0;
+    /*background-color: #FFFFFF;*/
+    background-image: url("/images/fondoAzul.png ");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.sidenavTitulo{
+    width: 152px;
+    height: 31px;
+    left: 158px;
+    top: 740px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 26px;
+    /* or 108% */
+    /* Blanco pleno */
+    color: #FFFFFF;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-1 16:31:32
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation ping
+ * ----------------------------------------
+ */
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-1 16:32:59
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation focus-in-expand
+ * ----------------------------------------
+ */
+@-webkit-keyframes focus-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+@-webkit-keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+@keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+.focus-in-expand {
+    -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.ping {
+    -webkit-animation: ping 2s ease-in-out infinite both;
+    animation: ping 2s ease-in-out infinite both;
+}
+
+.wobble-hor-bottom {
+    -webkit-animation: wobble-hor-bottom 0.8s 4s 10 both;
+    animation: wobble-hor-bottom 0.8s 4s 10 both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-1 16:36:17
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation wobble-hor-bottom
+ * ----------------------------------------
+ */
+@-webkit-keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+@keyframes wobble-hor-bottom {
+    0%,
+    100% {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    15% {
+        -webkit-transform: translateX(-30px) rotate(-6deg);
+        transform: translateX(-30px) rotate(-6deg);
+    }
+    30% {
+        -webkit-transform: translateX(15px) rotate(6deg);
+        transform: translateX(15px) rotate(6deg);
+    }
+    45% {
+        -webkit-transform: translateX(-15px) rotate(-3.6deg);
+        transform: translateX(-15px) rotate(-3.6deg);
+    }
+    60% {
+        -webkit-transform: translateX(9px) rotate(2.4deg);
+        transform: translateX(9px) rotate(2.4deg);
+    }
+    75% {
+        -webkit-transform: translateX(-6px) rotate(-1.2deg);
+        transform: translateX(-6px) rotate(-1.2deg);
+    }
+}
+
+.tilt-in-right-1 {
+    -webkit-animation: tilt-in-right-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: tilt-in-right-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2022-8-16 17:38:47
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info.
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tilt-in-right-1
+ * ----------------------------------------
+ */
+@-webkit-keyframes tilt-in-right-1 {
+    0% {
+        -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+        transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+        transform: rotateX(0deg) translateX(0) skewX(0deg);
+        opacity: 1;
+    }
+}
+@keyframes tilt-in-right-1 {
+    0% {
+        -webkit-transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+        transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: rotateX(0deg) translateX(0) skewX(0deg);
+        transform: rotateX(0deg) translateX(0) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.vertical-menu {
+    width: 200px; /* Set a width if you like */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+}
+.vertical-menu button{
+    margin-left:-10px
+}
+.vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+    background-color: var(--violeta); /* Add a green color to the "active/current" link */
+    color: white;
+}
+

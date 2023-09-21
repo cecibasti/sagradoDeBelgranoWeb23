@@ -1,0 +1,113 @@
+
+.img-carousel{
+    width: 100%;
+}
+
+.space-parrafo{
+    padding-top: 15px;
+}
+.space-titulo{
+    padding-top: 25px;
+}
+.barra-nivel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+    color: white;
+    background-color: darkcyan;
+    text-align: center;
+    
+}
+
+.titulo-nivel{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline, dashed, currentColor;
+    text-decoration-color: coral;
+    margin-left: 25px;
+    margin-right: 25px;
+
+}
+
+.txt-nivel{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1em;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: normal;
+}
+
+.txt-destacado{
+    color: coral;
+}
+
+.txt-titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3 em;
+    text-align: justify;
+    margin-left: 25px;
+    margin-right: 25px;
+    font-weight: normal;
+    color: coral;
+
+}
+
+.img-div{
+     background-color: rgb(0, 51, 153);
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 2em;
+    padding-left: 2em;
+    
+}
+
+.img-div-prox{
+    background-image: url("Images/placas/proximamente.png");
+    background-repeat: no-repeat;
+    margin-left: 25%;
+
+}
+
+.img-div-cong{
+    margin-left: 33%;
+
+}
+.img-xsm{
+    width: 15%;
+}
+
+.img-sm{
+    width: 25%;
+}
+
+.img-m{
+    width: 50%;
+}
+
+.img-l{
+
+    width: 75%;
+}
+
+.img-cen{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.p-header{
+    font-size: 1em;
+}
+
+.h1-header{
+    font-size: 2.1em;
+    padding-left: 1em;
+
+}
+
+
+
+
+
+
